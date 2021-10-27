@@ -18,7 +18,7 @@ Fecha Modificacion: 13/10/2021 -->
     </head>
     <body>
         <header>
-            <h1>AROA G.O desde 2001</h1>
+            <h1>AROA G.O TEMA 3</h1>
         </header>
         <main>
 
@@ -163,10 +163,10 @@ Fecha Modificacion: 13/10/2021 -->
                 </tr>
                 <tr>
                     <td>16. Recorrer el array anterior utilizando funciones para obtener el mismo resultado.</td>
-                    <td class="no_hecho">
-                        <a href="#"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
+                    <td class="hecho">
+                        <a href="./codigoPHP/ejercicio16.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
                     <td>
-                        <a href="#"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
+                        <a href="./mostrarcodigo/ejercicio16.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
                     </td>
                 </tr>
                 <tr>
@@ -194,6 +194,42 @@ Fecha Modificacion: 13/10/2021 -->
                         <a href="./codigoPHP/ejercicio21.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
                     <td>
                         <a href="./mostrarcodigo/ejercicio21.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>21. Construir un formulario para recoger un cuestionario realizado a una persona y enviarlo a una página Tratamiento.php para que muestre
+                        las preguntas y las respuestas recogidas</td>
+                    <td class="hecho">
+                        <a href="./codigoPHP/ejercicio21.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
+                    <td>
+                        <a href="./mostrarcodigo/ejercicio21.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>22. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la misma página las preguntas y las respuestas recogidas.</td>
+                    <td class="hecho">
+                        <a href="./codigoPHP/ejercicio22.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
+                    <td>
+                        <a href="./mostrarcodigo/ejercicio22.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>23. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la misma página las preguntas y las respuestas
+                        recogidas; en el caso de que alguna respuesta esté vacía o errónea volverá a salir el formulario con el mensaje correspondiente.</td>
+                    <td class="hecho">
+                        <a href="./codigoPHP/ejercicio23.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
+                    <td>
+                        <a href="./mostrarcodigo/ejercicio23.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>24. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la  misma página las preguntas y las respuestas
+                        recogidas; en el caso de que alguna respuesta esté vacía o errónea volverá a salir el formulario con el mensaje correspondiente, pero las
+                        respuestas que habíamos tecleado correctamente aparecerán en el formulario y no tendremos que volver a teclearlas.</td>
+                    <td class="hecho">
+                        <a href="./codigoPHP/ejercicio24.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
+                    <td>
+                        <a href="./mostrarcodigo/ejercicio24.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
                     </td>
                 </tr>
             </table>
