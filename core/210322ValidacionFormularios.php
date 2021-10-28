@@ -256,7 +256,8 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
         $fechaFormateada = strtotime($fecha);  //CREAR FECHA PARA TRABAJAR CON LAS FUNCIONES DE PHP
 
         if (is_bool($fechaFormateada) && !empty($fecha)) {
-            $mensajeError = " Formato incorrecto de fecha (Año-Mes-dia) (2000-01-01).";
+            //modificado mensaje de salida
+            $mensajeError = " Formato incorrecto de fecha (dia-Mes-Año).";
         } else {
             if(!empty($fecha) && ($fechaFormateada < $fechaMinima) || ($fechaFormateada > $fechaMaxima)){
                 $mensajeError = " Por favor introduzca una fecha entre " . date('d/m/Y', $fechaMinima) . " y " . date('d/m/Y', $fechaMaxima) . ".";
