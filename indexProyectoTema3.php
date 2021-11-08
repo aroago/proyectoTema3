@@ -173,18 +173,18 @@ Fecha Modificacion: 13/10/2021 -->
                     <td>17. Inicializar un array (bidimensional con dos índices numéricos) donde almacenamos el nombre de las personas que tienen reservado el
                         asiento en un teatro de 20 filas y 15 asientos por fila. (Inicializamos el array ocupando únicamente 5 asientos). Recorrer el array con
                         distintas técnicas (foreach(), while(), for()) para mostrar los asientos ocupados en cada fila y las personas que lo ocupan.</td>
-                    <td class="no_hecho">
-                        <a href="#"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
+                    <td class="hecho">
+                        <a href="./codigoPHP/ejercicio17.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
                     <td>
-                        <a href="#"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
+                        <a href="./mostrarcodigo/ejercicio17.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
                     </td>
                 </tr>
                 <tr>
                     <td>18. Recorrer el array anterior utilizando funciones para obtener el mismo resultado</td>
-                    <td class="no_hecho">
-                        <a href="#"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
+                    <td class="hecho">
+                        <a href="./codigoPHP/ejercicio18.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
                     <td>
-                        <a href="#"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
+                        <a href="./mostrarcodigo/ejercicio18.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
                     </td>
                 </tr>
                 <tr>
@@ -231,7 +231,7 @@ Fecha Modificacion: 13/10/2021 -->
                     <td>
                         <a href="./mostrarcodigo/ejercicio24.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
                     </td>
-                </tr>25. Trabajar en PlantillaFormulario.php mi plantilla para hacer formularios como churros.
+                </tr>
                 <tr>
                     <td>25. Trabajar en PlantillaFormulario.php mi plantilla para hacer formularios como churros.</td>
                     <td class="no_hecho">
