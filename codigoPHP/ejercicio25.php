@@ -161,8 +161,8 @@ Fecha Modificacion: 08/11/2021 -->
 
             $aErrores['listaObligatorio'] = validacionFormularios::validarElementoEnLista($_REQUEST['listaObligatorio'], $aOpciones = ['opcion 1', 'opcion 2', 'opcion 3', 'opcion 4', 'opcion 5', 'opcion 6']);
 
-            
-           
+
+
             //acciones correspondientes en caso de que haya algún error
             foreach ($aErrores as $error) {
                 //condición de que hay un error
@@ -205,7 +205,6 @@ Fecha Modificacion: 08/11/2021 -->
             $aRespuestas['textolargoOpcional'] = $_REQUEST['textolargoOpcional'];
             $aRespuestas['radioObligatorio'] = $_REQUEST['radioObligatorio'];
             $aRespuestas['radioOpcional'] = $_REQUEST['radioOpcional'];
-            /* $aRespuestas['checkboxObligatorio'] = $_REQUEST['checkboxObligatorio']; */
             $aRespuestas['rangoObligatorio'] = $_REQUEST['rangoObligatorio'];
             $aRespuestas['rangoOpcional'] = $_REQUEST['rangoOpcional'];
             $aRespuestas['listaObligatorio'] = $_REQUEST['listaObligatorio'];
@@ -225,7 +224,7 @@ Fecha Modificacion: 08/11/2021 -->
             echo "</table>";
             echo "</main>";
             ?>
-          
+
             <?php
         }
         // Si hay errores (o es la primera vez)
@@ -406,13 +405,13 @@ Fecha Modificacion: 08/11/2021 -->
                         <label for="opcion1">Opción 1</label>
 
                         <input id="opcion2" type="radio" name="radioOpcional" value="opcion2" 
-    <?php
-    echo ($_REQUEST['radioOpcional'] === 'opcion2') ? "checked" : "";
-    ?>>
+                        <?php
+                        echo ($_REQUEST['radioOpcional'] === 'opcion2') ? "checked" : "";
+                        ?>>
                         <label for="opcion2">Opción 2</label>
-                               <?php
-                               echo (!is_null($aErrores['checkboxObligatorio'])) ? "<span >$aErrores[textolargoObligatorio]</span>" : "";
-                               ?>                            
+                        <?php
+                        echo (!is_null($aErrores['checkboxObligatorio'])) ? "<span >$aErrores[textolargoObligatorio]</span>" : "";
+                        ?>                            
                         <hr>
                         <label for="rangoObligatorio">Rango obligatorio<span >*</span>:</label>
                         <input id="rangoObligatorio" type="range" name="rangoObligatorio" max="8" value="<?php echo (isset($_REQUEST['rangoObligatorio'])) ? $_REQUEST['rangoObligatorio'] : "4"; ?>">
@@ -430,9 +429,9 @@ Fecha Modificacion: 08/11/2021 -->
                             <option value="opcion 5" <?php echo ($_REQUEST['listaObligatorio'] === 'opcion 5') ? "selected" : ""; ?>>Opción 5</option> 
                             <option value="opcion 6" <?php echo ($_REQUEST['listaObligatorio'] === 'opcion 6') ? "selected" : ""; ?>>Opción 6</option> 
                         </select>
-    <?php
-    echo (!is_null($aErrores['listaObligatorio'])) ? "<span >$aErrores[listaObligatorio]</span>" : "";
-    ?>   
+                        <?php
+                        echo (!is_null($aErrores['listaObligatorio'])) ? "<span >$aErrores[listaObligatorio]</span>" : "";
+                        ?>   
                         <br>
                         <label for="listaOpcional">Lista opcional:</label>
                         <select name="listaOpcional" value="nada">
@@ -444,16 +443,16 @@ Fecha Modificacion: 08/11/2021 -->
                             <option value="opcion 5" <?php echo ($_REQUEST['listaOpcional'] === 'opcion 5') ? "selected" : ""; ?>>Opción 5</option> 
                             <option value="opcion 6" <?php echo ($_REQUEST['listaOpcional'] === 'opcion 6') ? "selected" : ""; ?>>Opción 6</option> 
                         </select>
-                        
+
                         <br>
-                   </fieldset>
+                    </fieldset>
                     <input id="enviar" type="submit" value="Enviar" name="enviar"/>
                     <input id="vaciar" type="reset" value="Vaciar" name="vaciar"/>
                 </form>
             </main>
-           
-    <?php
-}
-?>
+
+            <?php
+        }
+        ?>
     </body>
 </html>
