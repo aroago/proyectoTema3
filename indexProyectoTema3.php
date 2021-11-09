@@ -234,7 +234,7 @@ Fecha Modificacion: 13/10/2021 -->
                 </tr>
                 <tr>
                     <td>25. Trabajar en PlantillaFormulario.php mi plantilla para hacer formularios como churros.</td>
-                    <td class="no_hecho">
+                    <td class="hecho">
                         <a href="./codigoPHP/ejercicio25.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
                     <td>
                         <a href="./mostrarcodigo/ejercicio25.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
