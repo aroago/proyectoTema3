@@ -76,8 +76,6 @@ Fecha Modificacion: 08/11/2021 -->
             'emailOpcional' => null,
             'textolargoObligatorio' => null,
             'textolargoOpcional' => null,
-            'radioObligatorio' => null,
-            'radioOpcional' => null,
             'rangoObligatorio' => null,
             'rangoOpcional' => null,
             'listaObligatorio' => null,
@@ -106,8 +104,6 @@ Fecha Modificacion: 08/11/2021 -->
             'emailOpcional' => null,
             'textolargoObligatorio' => null,
             'textolargoOpcional' => null,
-            'radioObligatorio' => null,
-            'radioOpcional' => null,
             'rangoObligatorio' => null,
             'rangoOpcional' => null,
             'listaObligatorio' => null,
@@ -157,19 +153,16 @@ Fecha Modificacion: 08/11/2021 -->
 
             $aErrores['emailOpcional'] = validacionFormularios::validarEmail($_REQUEST['emailOpcional'], 0);
 
-            $aErrores['radioObligatorio'] = validacionFormularios::validarElementoEnLista($_REQUEST['radioObligatorio'], $aOpciones = ['opcion1', 'opcion2']);
-
             $aErrores['listaObligatorio'] = validacionFormularios::validarElementoEnLista($_REQUEST['listaObligatorio'], $aOpciones = ['opcion 1', 'opcion 2', 'opcion 3', 'opcion 4', 'opcion 5', 'opcion 6']);
 
 
 
             //acciones correspondientes en caso de que haya algún error
-            foreach ($aErrores as $error) {
-                //condición de que hay un error
-                if (($error) != null) {
-                    //limpieza del campo para cuando vuelva a aparecer el formulario
-                    $_REQUEST[key($error)] = "";
-                    $entradaOK = false;
+            foreach ($aErrores as $campo => $error) { // reocrro el array de errores
+                if ($error != null) { // compruebo si hay algun elemento distinto de null
+                    //Limpieza del campo.
+                    $_REQUEST[$campo] = ''; // reocrro el array de errores
+                    $entradaOK = false; // le doy el valor false a $entradaOK
                 }
             }
         }
@@ -203,8 +196,6 @@ Fecha Modificacion: 08/11/2021 -->
             $aRespuestas['emailOpcional'] = $_REQUEST['emailOpcional'];
             $aRespuestas['textolargoObligatorio'] = $_REQUEST['textolargoObligatorio'];
             $aRespuestas['textolargoOpcional'] = $_REQUEST['textolargoOpcional'];
-            $aRespuestas['radioObligatorio'] = $_REQUEST['radioObligatorio'];
-            $aRespuestas['radioOpcional'] = $_REQUEST['radioOpcional'];
             $aRespuestas['rangoObligatorio'] = $_REQUEST['rangoObligatorio'];
             $aRespuestas['rangoOpcional'] = $_REQUEST['rangoOpcional'];
             $aRespuestas['listaObligatorio'] = $_REQUEST['listaObligatorio'];
@@ -380,38 +371,7 @@ Fecha Modificacion: 08/11/2021 -->
                         <br>
                         <label for="textolargoOpcional">Texto largo opcional:</label>
                         <textarea id="textolargoOpcional" name="textolargoOpcional"><?php echo (isset($_REQUEST['textolargoOpcional'])) ? $_REQUEST['textolargoOpcional'] : ""; ?></textarea>
-                        <hr>
-                        <label for="radioObligatorio">Radio obligatorio<span >*</span>:</label>
-                        <input  id="opcion1" type="radio" name="radioObligatorio" value="opcion1" 
-                        <?php
-                        echo ($_REQUEST['radioObligatorio'] === 'opcion1') ? "checked" : "";
-                        ?>>
-                        <label for="opcion1">Opción 1</label>
-
-                        <input id="opcion2" type="radio" name="radioObligatorio" value="opcion2" 
-                        <?php
-                        echo ($_REQUEST['radioObligatorio'] === 'opcion2') ? "checked" : "";
-                        ?>>
-                        <label for="opcion2">Opción 2</label>
-                        <?php
-                        echo (!is_null($aErrores['radioObligatorio'])) ? "<span >$aErrores[radioObligatorio]</span>" : "";
-                        ?>
-                        <br>
-                        <label for="radioOpcional">Radio opcional:</label>
-                        <input id="opcion1" type="radio" name="radioOpcional" value="opcion1" 
-                        <?php
-                        echo ($_REQUEST['radioOpcional'] === 'opcion1') ? "checked" : "";
-                        ?>>
-                        <label for="opcion1">Opción 1</label>
-
-                        <input id="opcion2" type="radio" name="radioOpcional" value="opcion2" 
-                        <?php
-                        echo ($_REQUEST['radioOpcional'] === 'opcion2') ? "checked" : "";
-                        ?>>
-                        <label for="opcion2">Opción 2</label>
-                        <?php
-                        echo (!is_null($aErrores['checkboxObligatorio'])) ? "<span >$aErrores[textolargoObligatorio]</span>" : "";
-                        ?>                            
+                                               
                         <hr>
                         <label for="rangoObligatorio">Rango obligatorio<span >*</span>:</label>
                         <input id="rangoObligatorio" type="range" name="rangoObligatorio" max="8" value="<?php echo (isset($_REQUEST['rangoObligatorio'])) ? $_REQUEST['rangoObligatorio'] : "4"; ?>">

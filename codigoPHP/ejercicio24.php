@@ -75,7 +75,7 @@ respuestas que habíamos tecleado correctamente aparecerán en el formulario y n
             'dni' => null,
             'email' => null,
             'tel' => null,
-            'date' => null,
+            'fecha' => null,
             'codigoPostal' => null,
             'url' => null,
         ];
@@ -87,7 +87,7 @@ respuestas que habíamos tecleado correctamente aparecerán en el formulario y n
             'dni' => null,
             'email' => null,
             'tel' => null,
-            'date' => null,
+            'fecha' => null,
             'codigoPostal' => null,
             'url' => null,
         ];

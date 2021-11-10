@@ -9,6 +9,9 @@ Fecha Modificacion: 08/10/2021 -->
         <meta name="author" content="aroaGraneroOmañas">
         <title>Ejercicio17</title>
         <style>
+            body{
+                background-color:grey;
+            }
             tr,td{
                 height: 40px;
                 border: solid 1px black;
@@ -17,11 +20,30 @@ Fecha Modificacion: 08/10/2021 -->
                 font-family: sans-serif
             }
             .vacio{
-                background-color: grey;
+                background:  #437F42;
+                background: linear-gradient(0.55turn, #fff, grey, green); 
+                width:150px;
+                height:30px;
+                color:white;
+                border-radius:4px;
+                align-items:center;
+                justify-content:center;
+                text-transform:uppercase;
+                font-size:20px;
+                font-weight:bold;
             }
 
             .ocupado{
-                background-color: red;
+                width:150px;
+                height:30px;
+                background: linear-gradient(0.55turn, #424949, #c70039, #424949);  
+                color:white;
+                border-radius:4px;
+                align-items:center;
+                justify-content:center;
+                text-transform:uppercase;
+                font-size:20px;
+                font-weight:bold;
             }
         </style>
     </head>
@@ -44,6 +66,15 @@ Fecha Modificacion: 08/10/2021 -->
         $arrayDeCine[1][2] = "Juan Jose Granero Omanas";
         $arrayDeCine[2][1] = "Heraclio";
         $arrayDeCine[2][2] = "Baldomero";
+        $arrayDeCine[6][2] = "Amor";
+        $arrayDeCine[9][8] = "Alberto";
+        $arrayDeCine[10][12] = "Meli";
+        $arrayDeCine[14][10] = "Molgra";
+        $arrayDeCine[18][14] = "Apa";
+        $arrayDeCine[9][7] = "Maria";
+        $arrayDeCine[10][11] = "Angel";
+        $arrayDeCine[14][9] = "Patricia";
+        $arrayDeCine[18][13] = "Estefan";
         $arrayDeCine[19][5] = "Spiderman";
         //ForEach
         echo "<h1>forEach()</h1>";
