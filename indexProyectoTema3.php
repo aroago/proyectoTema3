@@ -197,15 +197,6 @@ Fecha Modificacion: 13/10/2021 -->
                     </td>
                 </tr>
                 <tr>
-                    <td>21. Construir un formulario para recoger un cuestionario realizado a una persona y enviarlo a una página Tratamiento.php para que muestre
-                        las preguntas y las respuestas recogidas</td>
-                    <td class="hecho">
-                        <a href="./codigoPHP/ejercicio21.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
-                    <td>
-                        <a href="./mostrarcodigo/ejercicio21.php"> <img class="img" alt="Codigo" src="./webroot/img/codigo.png" /></a>
-                    </td>
-                </tr>
-                <tr>
                     <td>22. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la misma página las preguntas y las respuestas recogidas.</td>
                     <td class="hecho">
                         <a href="./codigoPHP/ejercicio22.php"><img class="img" alt="Play" src="./webroot/img/play.png" /></a></td>
